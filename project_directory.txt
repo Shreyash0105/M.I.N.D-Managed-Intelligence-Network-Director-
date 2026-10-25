@@ -1,0 +1,139 @@
+teammind/
+|-- .gitignore
+|-- README.md
+|-- project_directory.txt
+|
+|-- backend/
+|   |-- .env
+|   |-- .env.example
+|   |-- pytest.ini
+|   |-- requirements.txt
+|   |
+|   |-- app/
+|   |   |-- __init__.py
+|   |   |-- main.py
+|   |   |
+|   |   |-- agents/
+|   |   |   |-- __init__.py
+|   |   |   |-- conflict.py
+|   |   |   |-- extractor.py
+|   |   |   |-- freshness.py
+|   |   |   |-- guard.py
+|   |   |   |-- orchestrator.py
+|   |   |   |-- planner.py
+|   |   |   |-- reflection.py
+|   |   |   `-- responder.py
+|   |   |
+|   |   |-- api/
+|   |   |   |-- __init__.py
+|   |   |   |-- admin.py
+|   |   |   |-- auth.py
+|   |   |   |-- chat.py
+|   |   |   |-- decisions.py
+|   |   |   |-- memories.py
+|   |   |   `-- stream.py
+|   |   |
+|   |   |-- core/
+|   |   |   |-- __init__.py
+|   |   |   |-- config.py
+|   |   |   |-- security.py
+|   |   |   `-- util.py
+|   |   |
+|   |   |-- db/
+|   |   |   |-- __init__.py
+|   |   |   |-- indexes.py
+|   |   |   |-- mongo.py
+|   |   |   `-- schemas.py
+|   |   |
+|   |   |-- graph/
+|   |   |   |-- __init__.py
+|   |   |   |-- chat_graph.py
+|   |   |   |-- chat_nodes.py
+|   |   |   |-- checkpointer.py
+|   |   |   |-- freshness_graph.py
+|   |   |   |-- fresh_nodes.py
+|   |   |   |-- learn_graph.py
+|   |   |   |-- learn_nodes.py
+|   |   |   |-- reflection_graph.py
+|   |   |   |-- reflect_nodes.py
+|   |   |   |-- registry.py
+|   |   |   |-- runners.py
+|   |   |   |-- state.py
+|   |   |   |-- threads.py
+|   |   |   `-- tracing.py
+|   |   |
+|   |   |-- llm/
+|   |   |   |-- __init__.py
+|   |   |   |-- prompts.py
+|   |   |   `-- provider.py
+|   |   |
+|   |   |-- services/
+|   |   |   |-- __init__.py
+|   |   |   |-- conversations.py
+|   |   |   |-- decisions_service.py
+|   |   |   |-- embeddings.py
+|   |   |   |-- events_service.py
+|   |   |   |-- memory_service.py
+|   |   |   |-- retrieval_service.py
+|   |   |   `-- seed.py
+|   |   |
+|   |   `-- workers/
+|   |       |-- __init__.py
+|   |       `-- scheduler.py
+|   |
+|   |-- mcp_server/
+|   |   |-- __init__.py
+|   |   `-- server.py
+|   |
+|   |-- scripts/
+|   |   `-- seed.py
+|   |
+|   `-- tests/
+|       |-- conftest.py
+|       |-- test_api.py
+|       |-- test_chat_graph.py
+|       |-- test_guard_and_routers.py
+|       |-- test_learn_graph.py
+|       |-- test_memory_service.py
+|       |-- test_other_graphs.py
+|       `-- snapshots/
+|           `-- graphs.json
+|
+`-- frontend/
+    |-- .env
+    |-- .env.example
+    |-- index.html
+    |-- package-lock.json
+    |-- package.json
+    |-- vite.config.js
+    |
+    `-- src/
+        |-- App.jsx
+        |-- index.css
+        |-- main.jsx
+        |
+        |-- api/
+        |   `-- client.js
+        |
+        |-- components/
+        |   |-- DecisionCard.jsx
+        |   |-- Inspector.jsx
+        |   |-- Layout.jsx
+        |   |-- MermaidView.jsx
+        |   `-- ui.jsx
+        |
+        |-- context/
+        |   |-- AuthContext.jsx
+        |   `-- LiveContext.jsx
+        |
+        `-- pages/
+            |-- Analytics.jsx
+            |-- Chat.jsx
+            |-- Decisions.jsx
+            |-- Graph.jsx
+            |-- Import.jsx
+            |-- Live.jsx
+            |-- Login.jsx
+            |-- Memories.jsx
+            |-- Settings.jsx
+            `-- Timeline.jsx

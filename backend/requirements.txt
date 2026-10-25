@@ -1,0 +1,17 @@
+fastapi
+uvicorn[standard]
+pydantic>=2
+pydantic-settings
+pymongo>=4.8
+sentence-transformers>=3.0
+numpy
+python-dotenv
+PyJWT
+bcrypt
+google-genai
+mcp>=1.2,<2          # 2.x renamed FastMCP; the MCP server uses the 1.x API
+apscheduler
+httpx
+langgraph>=1.0,<2    # graph engine (tested with 1.2)
+langgraph-checkpoint-mongodb>=0.3   # MongoDBSaver: pause/resume + crash recovery in the same Atlas cluster
+pytest

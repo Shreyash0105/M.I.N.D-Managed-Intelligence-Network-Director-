@@ -1,0 +1,17 @@
+@import "tailwindcss";
+@theme {
+  --font-sans: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+  --color-ink: #17150f;
+  --color-panel: #1f1c15;
+  --color-line: #38332a;
+  --color-paper: #ece6d6;
+  --color-dim: #9a927f;
+  --color-amber: #e0a63a;
+}
+:root { color-scheme: dark; }
+body { background: var(--color-ink); color: var(--color-paper); font-family: var(--font-sans); }
+::selection { background: #e0a63a55; }
+.react-flow__attribution { display: none; }
+@keyframes slidein { from { opacity: 0; transform: translateY(-6px); } to { opacity: 1; transform: none; } }
+.slidein { animation: slidein .25s ease-out; }
